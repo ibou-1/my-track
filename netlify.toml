@@ -3,3 +3,10 @@ included_files = ["node_modules/.geo/**"]
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
+
+[build]
+  command = "pnpm build"
+  publish = ".next"
+
+[build.environment]
+  PNPM_VERSION = "10.30.3"
