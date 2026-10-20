@@ -3,9 +3,3 @@ included_files = ["node_modules/.geo/**"]
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
-
-[build]
-command = "pnpm --filter umami build"
-
-[build.environment]
-PNPM_VERSION = "12.3.4"
